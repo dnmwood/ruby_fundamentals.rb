@@ -1,4 +1,4 @@
-# require 'pry'
+require 'pry'
 
   class Contact
 
@@ -84,7 +84,7 @@ end
 
   # This method should delete all of the contacts
   def self.delete_all
-    @@Contacts = []
+    @@contacts = []
   end
 
   def full_name
@@ -92,7 +92,7 @@ end
   end
 
   # This method should delete the contact
-  def delete_contact
+  def delete
     @@contacts.delete(self)
   # HINT: Check the Array class docs for built-in methods that might be useful here
   end
